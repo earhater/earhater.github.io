@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "КУРИЦАГовядина обыкновенная 50грамм",
+		"itemsInBox": 6,
+		"weight": 234,
+		"price": 100,
+		"imgSrc": "g50.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Говядина обыкновенная 250грамм",
+		"itemsInBox": 6,
+		"weight": 205,
+		"price": 250,
+		"imgSrc": "g250.jpg"
+	},
+	{
+		"id": 3,
+		"title": "КАТЕГОРИЯ 2 Свинина 250 грамм",
+		"itemsInBox": 6,
+		"weight": 182,
+		"price": 230,
+		"imgSrc": "sh250.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Свинина 50грамм",
+		"itemsInBox": 6,
+		"weight": 230,
+		"price": 320,
+		"imgSrc": "sh50.jpg"
+	}
+]
