@@ -1,6 +1,7 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
-
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color = "#2cab37";
 let subnne = document.getElementById("subnn");
 
 subnne.addEventListener("click", function(){
@@ -12,4 +13,5 @@ subnne.addEventListener("click", function(){
     tg.MainButton.setText("Вы выбрали товар 6!");
     item = "6";
     tg.MainButton.show();
-  }});
+  }
+});
