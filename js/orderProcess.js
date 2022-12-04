@@ -1,4 +1,5 @@
 let tg = window.Telegram.WebApp;
+tg.expand();
 let subnne = document.getElementById("subnn");
 
 subnne.addEventListener("click", function(){
