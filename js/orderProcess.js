@@ -1,7 +1,8 @@
+let tg = window.Telegram.WebApp;
+let subnne = document.getElementById("subnn");
 
-let subnn = document.getElementById("subnn");
-
-subnn.addEventListener("click", function(){
+subnne.addEventListener("click", function(){
   const item = document.getElementsByTagName("input")[0].value
+  console.log("hello")
   tg.sendData(item);
 });
