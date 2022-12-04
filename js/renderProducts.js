@@ -21,6 +21,8 @@ function renderProducts1(productsArray) {
 							<img class="product-img" src="img/roll/${item.imgSrc}" alt="">
 							<div class="card-body text-center">
 								<h4 class="item-title">${item.title}</h4>
+								<div class='subscr'>
+								<p>${item.subcription}</p></div>
 								<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт.</small></p>
 
 								<div class="details-wrapper">
