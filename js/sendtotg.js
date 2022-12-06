@@ -1,4 +1,17 @@
+let tg = window.Telegram.WebApp;
+
+tg.expand();
+
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color = "#2cab37";
+
+let item = "";
+
+
+let btn6 = document.getElementById("tgb");
+console.log(123)
 btn6.addEventListener("click", function(){
+	console.log("gag")
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
