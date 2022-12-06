@@ -6,7 +6,7 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
 
 let item = "";
-
+let data = "";
 
 let btn6 = document.getElementById("subbutt");
 console.log(123)
@@ -35,7 +35,6 @@ btn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	window.alert("Hello world!");
-	alert("Hello world!");
+	
 	tg.sendData(data);
 });
