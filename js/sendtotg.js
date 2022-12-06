@@ -25,7 +25,8 @@ btn6.addEventListener("click", function(){
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
 		const adress = formData.get('adress');
-		const data = name + " " + surname + " " + adress
+		const data = name + " " + number + " " + adress
+		console.log(data)
 		});
 
 		tg.MainButton.show();
