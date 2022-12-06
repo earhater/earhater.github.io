@@ -1,6 +1,15 @@
-// let tg = window.Telegram.WebApp;
-// sub.addEventListener("click", function(){
-// 		const productInfo = "hay"
-// 		tg.sendData(productInfo);
-		
-// });
+btn6.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 6!");
+		item = "6";
+		tg.MainButton.show();
+	}
+});
+
+
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
+});

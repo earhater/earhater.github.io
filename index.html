@@ -1,47 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Кур</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
-<body>
 
-	<div class="container">
-		<div class="inner">
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-				<button class="btn" id="btn1">Add</button>
+<body>
+		
+
+
+	<div class="container mb-5">
+		<div class="col-md-8" id="el">
+			
+				<div class="row" id="otstup1">
+					
+				</div>
 			</div>
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-			    <button class="btn" id="btn2">Add</button>
-		    </div>
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-			    <button class="btn" id="btn3">Add</button>
+
+		<div class="row">
+
+			<!-- Товары -->
+			<div class="col-md-8">
+			
+				<div class="row" id="products-containergov">
+					
+				</div>
 			</div>
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-				<button class="btn" id="btn4">Add</button>
+
+			<div class="col-md-8" id="el2">
+			
+				<div class="row" id="otstup2">
+					
+				</div>
 			</div>
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-				<button class="btn" id="btn5">Add</button>
+			
+			<!-- Товары -->
+			<div class="col-md-8">
+			
+				<div class="row" id="products-containerchicken">
+					
+				</div>
 			</div>
-			<div class="item">
-				<img src="1.png" alt="Burger" class="img">
-				<button class="btn" id="btn6">Add</button>
+
+			<!-- Корзина -->
+			<div class="col-md-4">
+
+				<!-- Корзина -->
+				<div class="card mb-4">
+					<div class="card-body">
+						<h5 class="card-title">Ваш заказ</h4>
+
+							<div data-cart-empty class="alert alert-secondary" role="alert">
+							Корзина пуста
+						</div>
+
+						<!-- cart-wrapper -->
+						<div class="cart-wrapper">
+
+						</div>
+						<!-- // cart-wrapper -->
+
+						<!-- Стоимость заказа -->
+						<div class="cart-total">
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span>
+								<span class="delivery-cost">250 ₽</span><br>
+								<span class="small">Бесплатно при заказе от 600 ₽</span>
+							</p>
+							<p><span class="h5">Итого:</span>
+								<span class="total-price">0</span>
+								<span class="rouble">₽</span></p>
+						</div>
+						<!-- // Стоимость заказа -->
+
+					</div>
+
+					<!-- Оформить заказ -->
+					<div id="order-form" class="card-body border-top none">
+						<h5 class="card-title">Оформить заказ</h4>
+						
+							<div class="form-group">
+								<input id="phone" type="text" class="form-control" placeholder="Ваш номер телефона (Вам позвонит менеджер)">
+								<input type="text" class="form-control" placeholder="Введите ваш адрес">
+								<input type="text" class="form-control" placeholder="Как к вам обращатся">
+								<button id="btn6" class="btn btn-primary">Заказать</button>
+							</div>
+							
+							<p>Ваш Заказ будет передан менеджеру, который позвонит вам для уточнения заказа</p>
+							<p>Оплата курьером при получении</p>
+						
+					</div>
+					<!-- // Оформить заказ -->
+					<div class="col-md-8">
+						
+  						</div>
+				</div>
+				<!-- // Корзина -->
+
+			</div>
+				
 			</div>
 		</div>
-	</div>
-	<div class="usercard" id="usercard"></div>
-	
+	  	
+		<div id="footer">
+   					<button id="btn1" class="button" >Категория 1</button>
+   					<button id="btn2" class="button" >Категория 2</button>
 
+  					</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script src="app.js"></script>
+	<!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
+	<script src="./js/categorybar.js"></script>
+	<script src="./js/otstp.js"></script>
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/renderProducts1.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+	<script src="./js/orderProcess.js"></script>
+	
+<!-- Тот, кто собирается это парсить. 1. удачи! 2. товары подтягиваются из JSON -->
 </body>
 </html>
-
-<!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
