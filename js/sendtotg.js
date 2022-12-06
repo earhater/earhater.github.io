@@ -11,7 +11,7 @@ let data = "";
 let btn6 = document.getElementById("subbutt");
 console.log(123)
 btn6.addEventListener("click", function(){
-	console.log("gag")
+	
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
@@ -25,16 +25,12 @@ btn6.addEventListener("click", function(){
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
 		const adress = formData.get('adress');
-		const data = name + " " + number + " " + adress
+		data = name + " " + number + " " + adress
 		console.log(data)
 		});
-
-		tg.MainButton.show();
+		tg.sendData(data);
+		//tg.MainButton.show();
 	}
 });
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	
-	tg.sendData(data);
-});
