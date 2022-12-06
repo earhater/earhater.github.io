@@ -35,5 +35,7 @@ btn6.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	window.alert("Hello world!");
+	alert("Hello world!");
 	tg.sendData(data);
 });
