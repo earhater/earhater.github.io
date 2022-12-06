@@ -8,7 +8,7 @@ tg.MainButton.color = "#2cab37";
 let item = "";
 
 
-let btn6 = document.getElementById("tgb");
+let btn6 = document.getElementById("subbutt");
 console.log(123)
 btn6.addEventListener("click", function(){
 	console.log("gag")
@@ -16,8 +16,18 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 6!");
-		item = "6";
+		tg.MainButton.setText("Нажмите для подтверждения");
+		const formElement = document.getElementById('form1'); // извлекаем элемент формы
+		formElement.addEventListener('submit', (e) => {
+  		e.preventDefault();
+		const formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
+		// теперь можно извлечь данные
+		const name = formData.get('name'); // 'John'
+		const number = formData.get('number'); // 'Smith'
+		const adress = formData.get('adress');
+		const data = name + " " + surname + " " + adress
+		});
+
 		tg.MainButton.show();
 	}
 });
