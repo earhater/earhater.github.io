@@ -1,6 +1,6 @@
 // Div внутри корзины, в который мы добавляем товары
 const cartWrapper =  document.querySelector('.cart-wrapper');
-
+let productlist = "";
 // Отслеживаем клик на странице
 window.addEventListener('click', function (event) {
 	// Проверяем что клик был совершен по кнопке "Добавить в корзину"
@@ -10,7 +10,7 @@ window.addEventListener('click', function (event) {
 		const card = event.target.closest('.card');
 
 		// Собираем данные с этого товара и записываем их в единый объект productInfo
-		const productInfo = {
+		productInfo = {
 			id: card.dataset.id,
 			imgSrc: card.querySelector('.product-img').getAttribute('src'),
 			title: card.querySelector('.item-title').innerText,
@@ -27,9 +27,10 @@ window.addEventListener('click', function (event) {
 		if (itemInCart) {
 			const counterElement = itemInCart.querySelector('[data-counter]');
 			counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
+			productlist = productlist + productInfo.title
 		} else {
 			// Если товара нет в корзине
-
+			productlist = productlist + productInfo.title
 			// Собранные данные подставим в шаблон для товара в корзине
 			const cartItemHTML = `<div class="cart-item" data-id="${productInfo.id}">
 								<div class="cart-item__top">
@@ -73,5 +74,36 @@ window.addEventListener('click', function (event) {
 		// Пересчет общей стоимости товаров в корзине
 		calcCartPriceAndDelivery();
 
+	}
+});
+
+let tg = window.Telegram.WebApp;
+
+tg.expand();
+let data = "";
+
+let btn6 = document.getElementById("subbutt");
+console.log(123)
+btn6.addEventListener("click", function(){
+	
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+
+		tg.MainButton.setText("Нажмите для подтверждения");
+		const formElement = document.getElementById('form1'); // извлекаем элемент формы
+		formElement.addEventListener('submit', (e) => {
+  		e.preventDefault();
+		const formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
+		// теперь можно извлечь данные
+		const name = formData.get('name'); // 'John'
+		const number = formData.get('number'); // 'Smith'
+		const adress = formData.get('adress');
+		data = name + " " + number + " " + adress + productlist
+		console.log(data)
+		});
+		tg.sendData(data);
+		//tg.MainButton.show();
 	}
 });

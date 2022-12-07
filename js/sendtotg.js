@@ -1,3 +1,4 @@
+import { productInfo } from "./cart-02.js";
 let tg = window.Telegram.WebApp;
 
 tg.expand();
@@ -16,6 +17,7 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
+
 		tg.MainButton.setText("Нажмите для подтверждения");
 		const formElement = document.getElementById('form1'); // извлекаем элемент формы
 		formElement.addEventListener('submit', (e) => {
@@ -25,7 +27,7 @@ btn6.addEventListener("click", function(){
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
 		const adress = formData.get('adress');
-		data = name + " " + number + " " + adress
+		data = name + " " + number + " " + adress + productInfo
 		console.log(data)
 		});
 		tg.sendData(data);

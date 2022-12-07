@@ -6,7 +6,7 @@ getProducts();
 // Асинхронная функция получения данных из файла products.json
 async function getProducts() {
 	// Получаем данные из products.json
-    const response = await fetch('./js/stuff/gov.json');
+    const response = await fetch('./js/stuff/chips50.json');
     // Парсим данные из JSON формата в JS
     const productsArray = await response.json();
     // Запускаем ф-ю рендера (отображения товаров)
