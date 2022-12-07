@@ -8,7 +8,7 @@ function renderProducts12() {
 					<div class="lineup" id="el">
 					
 
-						<p>Категория 1</p>
+						<p>Мясные чипсы</p>
 					</div>`;
 
     productsContainer113.insertAdjacentHTML('beforeend', productHTML);
