@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d27616c5-a911-46d5-8177-dfaf85062a6a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="d27616c5-a911-46d5-8177-dfaf85062a6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670517505836</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="ФИНАЛКА((">
+      <created>1670519851100</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670519851100</updated>
+    </task>
+    <task id="LOCAL-00028" summary="3321q">
+      <created>1670520131671</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670520131671</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -272,6 +283,8 @@
     <MESSAGE value="FINAL1" />
     <MESSAGE value="FINAL12" />
     <MESSAGE value="ФИНАЛКА" />
-    <option name="LAST_COMMIT_MESSAGE" value="ФИНАЛКА" />
+    <MESSAGE value="ФИНАЛКА((" />
+    <MESSAGE value="3321q" />
+    <option name="LAST_COMMIT_MESSAGE" value="3321q" />
   </component>
 </project>
