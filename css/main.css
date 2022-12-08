@@ -60,7 +60,7 @@ img {
 .prokrutka {
 	height:150px; /* высота нашего блока */
 	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
-	overflow-x: scroll; /* прокрутка по горизонтали */
+	overflow-y: scroll; /* прокрутка по горизонтали */
 	text-align: center;
     position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
