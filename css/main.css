@@ -67,6 +67,8 @@ img {
     left: 0; bottom: 0; /* Левый нижний угол */
     background: #E8E3E1; /* Цвет фона */
     color: #fff; /* Цвет текста */
+    display: flex;
+ 	justify-content: space-around;
 
 }
 
