@@ -58,17 +58,15 @@ img {
 }
 
 .prokrutka {
-	height:150px; /* высота нашего блока */
-	border: 1px solid #C1C1C1; /* размер и цвет границы блока */
-	overflow-x: scroll; /* прокрутка по горизонтали */
-	overflow-y: scroll; /* прокрутка по вертикали */
+	display: flex;
 	text-align: center;
     position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
     background: #E8E3E1; /* Цвет фона */
     color: #fff; /* Цвет текста */
-    display: flex;
- 	justify-content: space-around;
+    width: 100%; /* Ширина слоя */
+	overflow-x: scroll; /* прокрутка по горизонтали */
 
 }
 
