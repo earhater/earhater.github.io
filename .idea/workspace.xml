@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d27616c5-a911-46d5-8177-dfaf85062a6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Hazel English - Summer Nights [Official Video]-9wdM4B_5ZOQ.opus" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/cheese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/combo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/copot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/drinks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/pelme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/roll/air1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/roll/arch.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/renderProducts3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/renderProducts4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/renderProducts5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/renderProducts6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/stuff/cheese.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/stuff/chips251.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/stuff/chips252.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/stuff/chips253.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo/chips.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo/chips.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/categorybar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/categorybar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/otstp.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/otstp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/renderProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/renderProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/renderProducts1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/renderProducts1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stuff/chips250.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/stuff/chips250.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670425807632</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="FINAL1">
+      <created>1670435650105</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670435650105</updated>
+    </task>
+    <task id="LOCAL-00025" summary="FINAL12">
+      <created>1670435898041</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670435898041</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -250,6 +283,8 @@
     <MESSAGE value="it seems like it is finish" />
     <MESSAGE value="it seems like it is finish((" />
     <MESSAGE value="FINAL" />
-    <option name="LAST_COMMIT_MESSAGE" value="FINAL" />
+    <MESSAGE value="FINAL1" />
+    <MESSAGE value="FINAL12" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL12" />
   </component>
 </project>

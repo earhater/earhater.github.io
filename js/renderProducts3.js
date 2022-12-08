@@ -1,19 +1,19 @@
-const productsContainer1 = document.querySelector('#products-containergov');
+const productsContainer123 = document.querySelector('#products-containercheese');
 
 // Запускаем getProducts
-getProducts2();
+getProducts1();
 
 // Асинхронная функция получения данных из файла products.json
-async function getProducts2() {
+async function getProducts1() {
 	// Получаем данные из products.json
-    const response = await fetch('./js/stuff/chips50.json');
+    const response = await fetch('./js/stuff/cheese.json');
     // Парсим данные из JSON формата в JS
     const productsArray = await response.json();
     // Запускаем ф-ю рендера (отображения товаров)
-	renderProducts1(productsArray);
+	renderProducts12(productsArray);
 }
 
-function renderProducts1(productsArray) {
+function renderProducts12(productsArray) {
     productsArray.forEach(function (item) {
         const productHTML = `<div class="col-md-6">
 
@@ -48,7 +48,7 @@ function renderProducts1(productsArray) {
 							</div>
 						</div>
 					</div>`;
-        productsContainer1.insertAdjacentHTML('beforeend', productHTML);
+        productsContainer123.insertAdjacentHTML('beforeend', productHTML);
     });
 }
 
