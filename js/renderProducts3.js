@@ -18,9 +18,10 @@ function renderProducts12(productsArray) {
         const productHTML = `<div class="col-md-6">
 
 						<div class="card mb-4" data-id="${item.id}">
+						<h4 class="item-title">${item.title}</h4>
 							<img class="product-img" src="img/roll/${item.imgSrc}" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">${item.title}</h4>
+								
 								<div class='subscr'>
 								<p>${item.subcription}</p></div>
 								
