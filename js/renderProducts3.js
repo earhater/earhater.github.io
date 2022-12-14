@@ -24,26 +24,25 @@ function renderProducts12(productsArray) {
 								<div class='subscr'>
 								<p>${item.subcription}</p></div>
 								<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт.</small></p>
-
+								<div class="price">
+										<div class="price__weight">${item.weight}г.</div>
+										<div class="price__currency">${item.price} ₽</div>
+									</div>
 								<div class="details-wrapper">
 
 									<!-- Счетчик -->
-									<div class="items counter-wrapper">
+									<div class="items_counters">
 										<div class="items__control" data-action="minus">-</div>
 										<div class="items__current" data-counter>1</div>
 										<div class="items__control" data-action="plus">+</div>
 									</div>
+									<button  type="button" class="card-button">В корзину</button>
 									<!-- // Счетчик -->
 
-									<div class="price">
-										<div class="price__weight">${item.weight}г.</div>
-										<div class="price__currency">${item.price} ₽</div>
-									</div>
+									
 								</div>
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">
-									+ в корзину
-								</button>
+								
 
 							</div>
 						</div>
