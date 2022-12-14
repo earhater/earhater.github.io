@@ -23,11 +23,15 @@ function renderProducts12(productsArray) {
 								<h4 class="item-title">${item.title}</h4>
 								<div class='subscr'>
 								<p>${item.subcription}</p></div>
-								<p><small data-items-in-box class="text-muted">${item.itemsInBox} шт.</small></p>
+								
 								<div class="price">
+										
+										
+										<div class="inbox"><p>В наличии: ${item.itemsInBox}</p></div>
 										<div class="price__weight">${item.weight}г.</div>
 										<div class="price__currency">${item.price} ₽</div>
-									</div>
+								</div>
+								
 								<div class="details-wrapper">
 
 									<!-- Счетчик -->

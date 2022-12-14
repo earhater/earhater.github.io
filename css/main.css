@@ -17,6 +17,12 @@ img {
 .header {
 	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: #EFC079;
+}
+
+.upft {
+	text-align: left;
+	font-size: 25px;
 }
 
 .logo {
@@ -136,14 +142,24 @@ img {
 	border: 1px solid #EFC079;
 	width: 200px;
 	display: flex;
-	font-size: 13px;
-	height: 40px;
+	/* В корзину */
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+	padding: 9px 45px; /* Some padding */;
 	color: #875140;
-	margin-left: 18px;
+
+
 	
-	font-family: "Montserrat pro Semibold";
-	padding: 1px 49px; /* Some padding */;
-	
+}
+.inbox {
+	display: flex;
+	color: #875140;
+	font-size: 14;
+	text-align: bottom;
 }
 
 .card-button:hover {
@@ -161,13 +177,15 @@ img {
 }
 
 .price {
-	text-align: left;
+	
+	
 }
 
 .price__weight {
 	color: #6c757d!important;
 	font-size: 80%;
 	line-height: 1;
+	text-align: center;
 }
 
 .price__currency {
@@ -300,7 +318,7 @@ img {
    #rectangle {
 	width: 2000px;
 	height: 116px;
-	background: red;
+	background: #EFC079;
 }
 
    .button {
