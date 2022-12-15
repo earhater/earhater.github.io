@@ -24,11 +24,17 @@ img {
 	text-align: center;
 	font-size: 16px;
 }
+.llg figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+   }
 
 .logo {
-	margin-left: auto;
-	margin-right: 0px;
+	text-align: center;
 	
+}
+
+.tac {
+	text-align: center;
 }
 
 .ya {
