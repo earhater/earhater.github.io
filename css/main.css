@@ -24,6 +24,24 @@ img {
 	text-align: center;
 	font-size: 16px;
 }
+.llg {
+	/* Говядина с брусникой */
+
+	
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	/* or 125% */
+	display: flex;
+	align-items: center;
+
+	color: #38342E;
+
+
+}
 .llg figcaption {
     margin: 0 auto 5px; /* Отступы вокруг абзаца */
    }
@@ -124,8 +142,13 @@ color: #38342E;
 	height: 40px;
 	overflow: hidden;
 	
+ 	margin: 0 20px;
+	
 }
 
+.colsz {
+	width: 357px;
+}
 
 .items {
 	font-family: 'Merriweather', serif;
@@ -173,7 +196,7 @@ color: #38342E;
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 20px;
 	/* identical to box height, or 143% */
 	padding: 9px 45px; /* Some padding */;
