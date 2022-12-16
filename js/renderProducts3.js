@@ -16,7 +16,7 @@ async function getProducts1() {
 function renderProducts12(productsArray) {
     productsArray.forEach(function (item) {
         const productHTML = `<div class="col-md-6">
-
+						<div >
 						<div class="card mb-4" data-id="${item.id}">
 						<h4 class="item-title">${item.title}</h4>
 							<img class="product-img" src="img/roll/${item.imgSrc}" alt="">
@@ -46,7 +46,7 @@ function renderProducts12(productsArray) {
 
 									
 								</div>
-
+								</div>
 								
 
 							</div>

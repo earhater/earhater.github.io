@@ -47,9 +47,14 @@ img {
    }
 
 .logo {
-	margin-left: auto;
-	margin-right: auto;
 	
+	margin-left: auto;
+  margin-right: 0em;
+}
+
+.thaste
+{
+	text-align: left;
 }
 
 .tac {
@@ -92,11 +97,11 @@ color: #38342E;
 
 .item-title {
     font-family: 'Montserrat';
-	font-style: normal;
+	font-style: bold;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
-
+	
 	color: #38342E;
 }
 
@@ -201,6 +206,7 @@ color: #38342E;
 	/* identical to box height, or 143% */
 	padding: 9px 45px; /* Some padding */;
 	color: #875140;
+	white-space: nowrap;
 
 
 	
@@ -345,13 +351,13 @@ color: #38342E;
 }
 
 .lineup{
-	height: 100px;
+	height: 50px;
   	width: auto;
-  	background-color: white;
+  	background-color: #F6F1E7;
 	color: #38342E;
   	border-top-left-radius: 10px;
   	border-top-right-radius: 10px;
-  	text-align: center;
+  	text-align: left;
   	font-size: 30px;
   	font-family: 'Merriweather', serif;
 }
@@ -368,8 +374,16 @@ color: #38342E;
 
    #rectangle {
 	width: 2000px;
-	height: 116px;
+	height: 50000px;
 	background: #EFC079;
+	
+}
+
+#rectangloid {
+	width: 500px;
+	height: 150px;
+	background: #F6F1E7;
+	margin-right: 0px;
 }
 
    .button {
@@ -389,3 +403,4 @@ color: #38342E;
 .subscr {
 	font-size: 80%;
 }
+
