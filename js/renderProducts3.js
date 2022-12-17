@@ -6,7 +6,7 @@ getProducts1();
 // Асинхронная функция получения данных из файла products.json
 async function getProducts1() {
 	// Получаем данные из products.json
-    const response = await fetch('./js/stuff/chips251.json');
+    const response = await fetch('./js/stuff/cheese.json');
     // Парсим данные из JSON формата в JS
     const productsArray = await response.json();
     // Запускаем ф-ю рендера (отображения товаров)
@@ -28,7 +28,7 @@ function renderProducts12(productsArray) {
 								<div class="price">
 										
 										
-										<div class="inbox"><p>В наличии: ${item.itemsInBox}</p></div>
+										<div class="inbox"><p>fsfdfsdВ наличии: ${item.itemsInBox}</p></div>
 										<div class="price__weight">${item.weight}г.</div>
 										<div class="price__currency">${item.price} ₽</div>
 								</div>
@@ -36,11 +36,11 @@ function renderProducts12(productsArray) {
 								<div class="details-wrapper">
 
 									<!-- Счетчик -->
-									<div class="items_counters">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
+									<div class="items counter-wrapper">
+									<div class="items__control" data-action="minus">-</div>
+									<div class="items__current" data-counter>1</div>
+									<div class="items__control" data-action="plus">+</div>
+								</div>
 									<button  type="button" class="card-button">В корзину</button>
 									<!-- // Счетчик -->
 
