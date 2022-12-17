@@ -4,7 +4,7 @@ let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
 let btn7 = document.getElementById("btn6");
-
+let btn8 = document.getElementById("btn7")
 btn1.addEventListener("click", function(){
   const el = document.getElementById('el');
   el.scrollIntoView();
@@ -34,3 +34,9 @@ btn7.addEventListener("click", function(){
   const el5 = document.getElementById('el6');
   el5.scrollIntoView();
 });
+btn8.addEventListener("click", function(){
+  const el5 = document.getElementById('order-form');
+  console.log("order")
+  el6.scrollIntoView();
+});
+
