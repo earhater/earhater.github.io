@@ -35,8 +35,8 @@ btn7.addEventListener("click", function(){
   el5.scrollIntoView();
 });
 btn8.addEventListener("click", function(){
-  const el5 = document.getElementById('order-form');
+  const el7 = document.getElementById('order-form');
   console.log("order")
-  el6.scrollIntoView();
+  el7.scrollIntoView();
 });
 

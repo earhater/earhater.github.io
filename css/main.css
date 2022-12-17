@@ -183,6 +183,21 @@ color: #38342E;
 	font-size: 18px;
 	height: 30px;
 	overflow: hidden;
+
+
+}
+
+.hex {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 1px;
+	width: 140px;
+	display: flex;
+	font-size: 18px;
+	height: 40px;
+	overflow: hidden;
+	
+ 	margin: 0 20px;
 }
 
 .items__control {

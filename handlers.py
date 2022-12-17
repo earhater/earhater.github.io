@@ -3,7 +3,7 @@ from aiogram.types import PreCheckoutQuery, LabeledPrice
 from aiogram.dispatcher.filters import Command
 import sqlite3
 from main import bot, dp
-ll = "https://earhater.github.io/"
+ll = "https://earhater.github.io"
 cart = []
 from keyboards import cat
 from aiogram.dispatcher.filters.state import StatesGroup, State
