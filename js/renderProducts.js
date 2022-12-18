@@ -36,7 +36,7 @@ function renderProducts1(productsArray) {
 				<div class="details-wrapper">
 
 					<!-- Счетчик -->
-					<div class="hex counter-wrapper">
+					<div class=" counter-wrapper hex">
 					<div class="items__control" data-action="minus">-</div>
 					<div class="items__current" data-counter>1</div>
 					<div class="items__control" data-action="plus">+</div>

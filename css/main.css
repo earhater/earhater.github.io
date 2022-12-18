@@ -97,6 +97,7 @@ color: #38342E;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 4px;
 }
 
 .item-title {
@@ -105,7 +106,8 @@ color: #38342E;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 20px;
-	
+	margin-left: 16px;
+	margin-top: ;
 	color: #38342E;
 
 	/* Говядина с брусникой */
@@ -191,13 +193,13 @@ color: #38342E;
 .hex {
 	font-family: 'Merriweather', serif;
 	background: #f2ede7;
-	border-radius: 1px;
+	border-radius: 4px;
 	width: 140px;
 	display: flex;
 	font-size: 18px;
 	height: 40px;
 	overflow: hidden;
-	
+	margin-top: 10px;
  	margin: 0 20px;
 }
 
@@ -206,6 +208,7 @@ color: #38342E;
 	cursor: pointer;
 	transition: 0.2s ease-in;
 	text-align: center;
+	margin-top: 5px;
 }
 
 .items__control:hover {
@@ -215,6 +218,7 @@ color: #38342E;
 
 .items__current {
 	width: 40px;
+	margin-top: 4px;
 }
 
 /* items--small */
@@ -293,11 +297,11 @@ color: #38342E;
 	
 	
 	margin-bottom: 0em;
-	padding: 1em;
+	margin-left: 30px;
 	white-space: nowrap;
-	text-align: center;
+	
 	/* В наличии: 6 */
-
+	
 
 	font-family: 'Montserrat';
 	font-style: normal;
@@ -486,6 +490,7 @@ color: #000000;
 
 .subscr {
 	font-size: 80%;
+	text-align: left;
 	/* Один из самых популярных видов. Брусника не надоедает, она дополняети сочетаясь с вкусом и фактурой говядины начинает бесподобный танец вкуса. */
 
 
