@@ -4,7 +4,7 @@ function init() {
     var myMap = new ymaps.Map('map', {
             center: [30.264981955459618, 59.9567962610097],
             zoom: 9,
-            controls: ['geolocationControl', 'searchControl']
+            controls: ['searchControl']
         }),
         deliveryPoint = new ymaps.GeoObject({
             geometry: {type: 'Point'},
@@ -105,6 +105,7 @@ function init() {
                     balloonContent: address,
                     balloonContentHeader: price
                 });
+                console.log(price)
             }
         }
     }
