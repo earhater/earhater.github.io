@@ -1,3 +1,4 @@
+console.log("map upload sucscess")
 ymaps.ready(init);
 
 function init() {
@@ -105,6 +106,7 @@ function init() {
                     balloonContent: address,
                     balloonContentHeader: price
                 });
+                console.log(price)
             }
         }
     }
