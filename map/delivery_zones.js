@@ -1,3 +1,6 @@
+let txtquery = document.querySelector('#txt');
+
+
 console.log("map upload sucscess")
 ymaps.ready(init);
 
@@ -91,6 +94,10 @@ function init() {
                     balloonContentHeader: ''
                 });
                 // Перекрашиваем метку в чёрный цвет.
+                let txtquery = document.querySelector('#txt');
+                txtquery.innerHTML = '';
+                let vscd = '<div>Доставка будет платной</div>'
+                txtquery.insertAdjacentHTML('beforeend', vscd);
                 deliveryPoint.options.set('iconColor', 'black');
             }
 
@@ -107,6 +114,10 @@ function init() {
                     balloonContentHeader: price
                 });
                 console.log(price)
+                let txtquery = document.querySelector('#txt');
+                txtquery.innerHTML = '';
+                let vscd = '<div>Данный адрес входит в зону бесплатной доставки</div>'
+                txtquery.insertAdjacentHTML('beforeend', vscd);
             }
         }
     }

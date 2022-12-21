@@ -8,7 +8,7 @@
         Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
         Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
     -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=longlat&amp;apikey=c7ef37a0-675e-4941-93da-e9f5df321b07" type="text/javascript"></script>
     <script src="./map/delivery_zones.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://yandex.st/jquery/2.2.3/jquery.js"></script>
     <style type="text/css">
@@ -146,7 +146,8 @@
 			<!-- МЕСТО ДЛЯ НОВЫХ КАТЕГОРИЙ -->
 		
 			<!-- Корзина -->
-			
+			<div class="yvi" id="txt"></div>
+			<div id="map"></div>
 			<div class="col-md-4">
 
 				<!-- Корзина -->
@@ -178,10 +179,13 @@
 						<!-- // Стоимость заказа -->
 
 					</div>
+					
+					
 
 					<!-- Оформить заказ -->
 					<div id="order-form" class="card-body border-top none">
 						<h5 class="card-title">Оформить заказ</h4>
+						
 						<form id="form1">
 							<div class="form-group">
 								<input type="text" class="form-control" name="number" placeholder="Ваш номер телефона">
@@ -211,8 +215,10 @@
 			</div>
 				
 			</div>
+		
 		</div>
-		<div class='col-md-5' id="map"></div>
+		
+		
 		<div class="prokrutka">
 					<input id="btn7" type="image" src="./img/logo/order.png" alt="Комбо">
    					<input id="btn1" type="image" src="./img/logo/chips.png" alt="Чипсы">
