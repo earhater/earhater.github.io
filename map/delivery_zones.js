@@ -113,10 +113,10 @@ function init() {
                     balloonContent: address,
                     balloonContentHeader: price
                 });
-                console.log(price)
+                console.log(address)
                 let txtquery = document.querySelector('#txt');
                 txtquery.innerHTML = '';
-                let vscd = '<div>Данный адрес входит в зону бесплатной доставки</div>'
+                let vscd = '<div>Данный адрес входит в зону бесплатной доставки </div>' + address
                 txtquery.insertAdjacentHTML('beforeend', vscd);
             }
         }
