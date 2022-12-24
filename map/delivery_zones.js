@@ -1,12 +1,12 @@
 let txtquery = document.querySelector('#txt');
-
+let deliveryCoste = document.querySelector('.delivery-cost');
 
 console.log("map upload sucscess")
 ymaps.ready(init);
 
 function init() {
     var myMap = new ymaps.Map('map', {
-            center: [30.264981955459618, 59.9567962610097],
+            center: [39.212241, 51.674441],
             zoom: 9,
             controls: ['geolocationControl', 'searchControl']
         }),
@@ -96,7 +96,7 @@ function init() {
                 // Перекрашиваем метку в чёрный цвет.
                 let txtquery = document.querySelector('#txt');
                 txtquery.innerHTML = '';
-                let vscd = '<div>Доставка будет платной</div>'
+                let vscd = '<div>Адрес не входит в зону доставки, уточните цену доставки у оператора</div>'
                 txtquery.insertAdjacentHTML('beforeend', vscd);
                 deliveryPoint.options.set('iconColor', 'black');
             }
@@ -115,9 +115,11 @@ function init() {
                 });
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
-                txtquery.innerHTML = '';
-                let vscd = '<div>Данный адрес входит в зону бесплатной доставки </div>' + address
-                txtquery.insertAdjacentHTML('beforeend', vscd);
+                
+                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес  ' + address
+                //deliveryCoste.innerText = '';
+                //deliveryCoste.innerText = '0 ₽';
+                txtquery.innerText = vscd
             }
         }
     }
