@@ -101,7 +101,7 @@ btn6.addEventListener("click", function(){
 		const number = formData.get('number'); // 'Smith'
 		const adress = formData.get('adress');
 
-		data = name + " " + number + " " + delivery_zones.newaddr + productlist
+		data = name + " " + number + " " + newaddr + productlist
 		console.log(data)
 		});
 		tg.sendData(data);
