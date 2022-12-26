@@ -3,6 +3,7 @@ let deliveryCoste = document.querySelector('.delivery-cost');
 
 console.log("map upload sucscess")
 ymaps.ready(init);
+myStorage = window.localStorage;
 
 function init() {
     var myMap = new ymaps.Map('map', {
@@ -115,7 +116,7 @@ function init() {
                 });
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
-                let newaddress = address
+                localStorage.setItem('adress', address);
                 let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес  ' + address
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
