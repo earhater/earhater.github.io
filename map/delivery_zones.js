@@ -115,7 +115,7 @@ function init() {
                 });
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
-                let newaddr = address
+                let newaddress = address
                 let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес  ' + address
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
