@@ -100,7 +100,8 @@ btn6.addEventListener("click", function(){
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
 		const adress = formData.get('adress');
-		data = name + " " + number + " " + adress + productlist
+
+		data = name + " " + number + " " + delivery_zones.newaddr + productlist
 		console.log(data)
 		});
 		tg.sendData(data);
