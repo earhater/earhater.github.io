@@ -99,7 +99,8 @@ btn6.addEventListener("click", function(){
 		// теперь можно извлечь данные
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
-		const adress = localStorage.getItem('adress');
+		let adrquery = document.querySelector('#adr');
+		const adress = adrquery.innerText;
 
 		data = name + " " + number + " " + address + productlist
 		console.log(data)
