@@ -100,9 +100,9 @@ btn6.addEventListener("click", function(){
 		const name = formData.get('name'); // 'John'
 		const number = formData.get('number'); // 'Smith'
 		let adrquery = document.querySelector('#adr');
-		const adress = adrquery.innerText;
-
-		data = name + " " + number + " " + address + productlist
+		let adress = adrquery.innerText;
+		console.log(adress)
+		data = name + " " + number + " " + adress + productlist
 		console.log(data)
 		});
 		tg.sendData(data);
