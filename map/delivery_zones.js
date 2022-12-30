@@ -117,7 +117,7 @@ function init() {
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
                 localStorage.setItem('adress', address);
-                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес  ' + address
+                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес' + address
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
                 txtquery.innerText = vscd
