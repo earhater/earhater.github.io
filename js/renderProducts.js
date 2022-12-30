@@ -28,7 +28,7 @@ function renderProducts1(productsArray) {
 				<div class="price">
 						
 						
-						<div  data-items-in-box class="inbox"><p>В312 наличии: ${item.itemsInBox}</p></div>
+						<div  data-items-in-box class="inbox"><p>В наличии: ${item.itemsInBox}</p></div>
 						<div class="price__weight">${item.weight}г.</div>
 						<div class="price__currency">${item.price} ₽</div>
 				</div>

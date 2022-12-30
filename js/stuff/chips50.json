@@ -64,5 +64,71 @@
 		"imgSrc": "ches.jpg",
 		"subcription": "Насыщенный вкус в сочетании с чесноком, подходит для любителей ароматной закуски. Привкус чеснока совершенно нежный и легкий, отлично дополняет нежные свиные ломтики, ни капли не портит ощущения. Сочетается как с лагером, так и с гозе."
 	
+	},
+	{
+		"id": 1,
+		"title": "Говядина с брусникой 250 гр.",
+		"itemsInBox": 6,
+		"weight": 250,
+		"price": 500.00,
+		"imgSrc": "bg50.png",
+		"subcription": " "
+	},
+	{
+		"id": 2,
+		"title": "Индейка 250 гр.",
+		"itemsInBox": 6,
+		"weight": 250,
+		"price": 325.00,
+		"imgSrc": "ind.jpg",
+		"subcription": " "
+	},
+	{
+		"id": 3,
+		"title": "Курица по мексикански 250 гр.",
+		"itemsInBox": 6,
+		"weight": 250,
+		"price": 325.00,
+		"imgSrc": "mex.jpg",
+		"subcription": " "
+	},
+	{
+		"id": 4,
+		"title": "Мраморная говядина с грибами 250гр.",
+		"itemsInBox": 6,
+		"weight": 250,
+		"price": 500.00,
+		"imgSrc": "marble.jpg",
+		"subcription": " "
+	},
+	{
+		"id": 5,
+		"title": "Свинина пикантная 250 гр.",
+		"itemsInBox": 3,
+		"weight": 250,
+		"price": 325.00,
+		"imgSrc": "sp.jpg",
+		"subcription": " "
+	
+	},
+	{
+		"id": 6,
+		"title": "Свинина с черносливом 250 гр.",
+		"itemsInBox": 3,
+		"weight": 250,
+		"price": 325.00,
+		"imgSrc": "sph.jpg",
+		"subcription": " "
+	
+	},
+	{
+		"id": 7,
+		"title": "Свинина с чесноком 250 гр.",
+		"itemsInBox": 3,
+		"weight": 250,
+		"price": 325.00,
+		"imgSrc": "ches.jpg",
+		"subcription": " "
+	
 	}
 ]
