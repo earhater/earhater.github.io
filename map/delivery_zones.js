@@ -117,8 +117,8 @@ function init() {
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
                 let adrquery = document.querySelector('#adr');
-                localStorage.setItem('adress', address);
-                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес ' + adrquery.innerText
+                adrquery.innerText = address
+                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес '
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
                 txtquery.innerText = vscd

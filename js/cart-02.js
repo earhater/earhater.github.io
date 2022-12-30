@@ -99,7 +99,7 @@ btn6.addEventListener("click", function(){
 	let adrquery = document.querySelector('#adr');
 	let adress = adrquery.innerText;
 	console.log(adress)
-	data = name + "Номер телефона " + number + "Адрес " + adress + " Товары: " + productlist
+	data = name + " Номер телефона " + number + " Адрес " + adress + " Товары: " + productlist
 	console.log(data)
 	tg.sendData(data);
 	});
