@@ -71,7 +71,7 @@
 		"itemsInBox": 6,
 		"weight": 250,
 		"price": 500.00,
-		"imgSrc": "bg50.png",
+		"imgSrc": "bg250.png",
 		"subcription": " "
 	},
 	{
@@ -80,7 +80,7 @@
 		"itemsInBox": 6,
 		"weight": 250,
 		"price": 325.00,
-		"imgSrc": "ind.jpg",
+		"imgSrc": "ind250.jpg",
 		"subcription": " "
 	},
 	{
@@ -89,7 +89,7 @@
 		"itemsInBox": 6,
 		"weight": 250,
 		"price": 325.00,
-		"imgSrc": "mex.jpg",
+		"imgSrc": "mex250.jpg",
 		"subcription": " "
 	},
 	{
@@ -98,7 +98,7 @@
 		"itemsInBox": 6,
 		"weight": 250,
 		"price": 500.00,
-		"imgSrc": "marble.jpg",
+		"imgSrc": "marble250.jpg",
 		"subcription": " "
 	},
 	{
@@ -107,7 +107,7 @@
 		"itemsInBox": 3,
 		"weight": 250,
 		"price": 325.00,
-		"imgSrc": "sp.jpg",
+		"imgSrc": "pic250.jpg",
 		"subcription": " "
 	
 	},
@@ -117,7 +117,7 @@
 		"itemsInBox": 3,
 		"weight": 250,
 		"price": 325.00,
-		"imgSrc": "sph.jpg",
+		"imgSrc": "chern250.jpg",
 		"subcription": " "
 	
 	},
