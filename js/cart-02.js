@@ -86,27 +86,25 @@ let btn6 = document.getElementById("subbutt");
 console.log(123)
 btn6.addEventListener("click", function(){
 	
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+	
 
-		tg.MainButton.setText("Нажмите для подтверждения");
-		const formElement = document.getElementById('form1'); // извлекаем элемент формы
-		formElement.addEventListener('submit', (e) => {
-  		e.preventDefault();
-		const formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
-		// теперь можно извлечь данные
-		const name = formData.get('name'); // 'John'
-		const number = formData.get('number'); // 'Smith'
-		let adrquery = document.querySelector('#adr');
-		let adress = adrquery.innerText;
-		console.log(adress)
-		data = name + " " + number + " " + adress + productlist
-		console.log(data)
-		});
-		tg.sendData(data);
-		//tg.MainButton.show();
-	}
+	tg.MainButton.setText("Нажмите для подтверждения");
+	const formElement = document.getElementById('form1'); // извлекаем элемент формы
+	formElement.addEventListener('submit', (e) => {
+	e.preventDefault();
+	let formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
+	// теперь можно извлечь данные
+	let name = formData.get('name'); // 'John'
+	let number = formData.get('number'); // 'Smith'
+
+	});
+	let adrquery = document.querySelector('#adr');
+	let adress = adrquery.innerText;
+	console.log(adress)
+	data = name + "Номер телефона " + number + "Адрес " + adress + " Товары: " + productlist
+	console.log(data)
+	tg.sendData(data);
+		
+	
 });
 
