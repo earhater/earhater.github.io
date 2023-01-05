@@ -96,10 +96,11 @@ btn6.addEventListener("click", function(){
 	// теперь можно извлечь данные
 	const name = formData.get('name'); // 'John'
 	let number = formData.get('number'); // 'Smith'
+	let comment = formData.get("comment");
 	let adrquery = document.querySelector('#adr');
 	let adress = adrquery.innerText;
 	console.log(adress)
-	data = name + " Номер телефона " + number + " Адрес " + adress + " Товары: " + productlist
+	data = "Имя// " + name + " //Номер телефона// " + number + " //Адрес// " + adress + " //Товары:// " + productlist + "//  Комментарий к заказу  //" + comment
 	console.log(data)
 	tg.sendData(data);
 	});
