@@ -32,8 +32,9 @@ function calcCartPriceAndDelivery() {
 		deliveryCost.innerText = 'бесплатно';
 	} else {
 		deliveryCost.classList.remove('free');
+		
 		deliveryCost.innerText = '150 ₽';
-		Dprice = 150
-		totalPriceEl.innerText = priceTotal;
+		
+		totalPriceEl.innerText = parseInt(priceTotal) + 150;
 	}
 }

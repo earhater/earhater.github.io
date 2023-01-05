@@ -2,7 +2,12 @@ body, html {
 	background-color: #F6F1E7;
 	height: 100%;
 }
-
+.nozone {
+	color: red;
+}
+.onzone {
+	color:#0EA107;
+}
 #map {
 	width: 	300px;
 	height: 200px;

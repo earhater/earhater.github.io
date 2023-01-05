@@ -96,9 +96,9 @@ function init() {
                 });
                 // Перекрашиваем метку в чёрный цвет.
                 let txtquery = document.querySelector('#txt');
-                txtquery.innerHTML = '';
-                let vscd = '<div>Адрес не входит в зону доставки, уточните цену доставки у оператора</div>'
-                txtquery.insertAdjacentHTML('beforeend', vscd);
+                txtquery.innerHTML = '<div class="nozone"> Условия бесплатной доставки не выполнены </div>';
+                let ttp = document.querySelector('.total-price');
+                
                 deliveryPoint.options.set('iconColor', 'black');
             }
 
@@ -117,11 +117,12 @@ function init() {
                 console.log(address)
                 let txtquery = document.querySelector('#txt');
                 let adrquery = document.querySelector('#adr');
+               
                 adrquery.innerText = address
-                let vscd = ' Данный адрес входит в зону бесплатной доставки, Вы указали адрес '
+                let vscd = '<div class="onzone"></div>'
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
-                txtquery.innerText = vscd
+                txtquery.innerHTML = '<div class="onzone">Условия бесплатной доставки выполнены</div>'
             }
         }
     }
