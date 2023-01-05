@@ -96,6 +96,9 @@ function init() {
                 });
                 // Перекрашиваем метку в чёрный цвет.
                 let txtquery = document.querySelector('#txt');
+                let adrquery = document.querySelector('#adr');
+               
+                adrquery.innerText = address
                 txtquery.innerHTML = '<div class="nozone"> Условия бесплатной доставки не выполнены </div>';
                 let ttp = document.querySelector('.total-price');
                 

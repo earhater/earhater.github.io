@@ -84,10 +84,13 @@ let data = "";
 
 let btn6 = document.getElementById("subbutt");
 console.log(123)
-btn6.addEventListener("click", function(){
-	
-	
-
+btn6.addEventListener("click", function()
+{
+	let adrquery = document.querySelector('#adr');
+	if (adrquery.innerText == '')
+	{
+		alert("Вы не ввели адрес");
+	}else{
 	
 	const formElement = document.getElementById('form1'); // извлекаем элемент формы
 	formElement.addEventListener('submit', (e) => {
@@ -103,8 +106,10 @@ btn6.addEventListener("click", function(){
 	data = "Имя// " + name + " //Номер телефона// " + number + " //Адрес// " + adress + " //Товары:// " + productlist + "//  Комментарий к заказу  //" + comment
 	console.log(data)
 	tg.sendData(data);
-	});
 	
+
+});
+}
 		
 	
 });
