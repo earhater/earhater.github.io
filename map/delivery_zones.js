@@ -96,13 +96,14 @@ function init() {
                 });
                 // Перекрашиваем метку в чёрный цвет.
                 let txtquery = document.querySelector('#txt');
-                let adrquery = document.querySelector('#adr');
+                //let adrquery = document.querySelector('#adr');
                
-                adrquery.innerText = address
-                txtquery.innerHTML = '<div class="nozone"> Условия бесплатной доставки не выполнены </div>';
-                let ttp = document.querySelector('.total-price');
+                //adrquery.innerText = address
+                txtquery.innerHTML = '<div class="nozone"> Доставка За зону доставки. Ориентировачная цена  - 500р, но она уточняется у оператора </div>';
                 
+                console.log("nozone")
                 deliveryPoint.options.set('iconColor', 'black');
+                calcCartPriceAndDelivery()
             }
 
             function setData(obj){
@@ -122,10 +123,11 @@ function init() {
                 let adrquery = document.querySelector('#adr');
                
                 adrquery.innerText = address
-                let vscd = '<div class="onzone"></div>'
+                txtquery.innerHTML = '<div class="onzone">Условия бесплатной доставки выполнены</div>'
+                calcCartPriceAndDelivery()
                 //deliveryCoste.innerText = '';
                 //deliveryCoste.innerText = '0 ₽';
-                txtquery.innerHTML = '<div class="onzone">Условия бесплатной доставки выполнены</div>'
+                
             }
         }
     }

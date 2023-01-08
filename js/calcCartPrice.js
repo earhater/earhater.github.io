@@ -4,7 +4,7 @@ function calcCartPriceAndDelivery() {
 	const totalPriceEl = document.querySelector('.total-price');
 	let deliveryCost = document.querySelector('.delivery-cost');
 	const cartDelivery = document.querySelector('[data-cart-delivery]');
-
+	let txtquery = document.querySelector('#txt');
 	// Общая стоимость товаров
 	let priceTotal = 0;
 
@@ -27,14 +27,27 @@ function calcCartPriceAndDelivery() {
 	}
 
 	// Указываем стоимость доставки
-	if (priceTotal >= 2000) {
-		deliveryCost.classList.add('free');
-		deliveryCost.innerText = 'бесплатно';
-	} else {
-		deliveryCost.classList.remove('free');
-		
-		deliveryCost.innerText = '150 ₽';
-		
-		totalPriceEl.innerText = parseInt(priceTotal) + 150;
+	
+
+	if (txtquery.innerHTML == '<div class="nozone"> Доставка За зону доставки. Ориентировачная цена  - 500р, но она уточняется у оператора </div>'){
+		deliveryCost.classList.remove('free')
+		deliveryCost.innerText = '500';
+	 	txtquery.innerHTML = '<div class="nozone"> Условия бесплатной доставки не выполнены </div>';
+	 	totalPriceEl.innerText = parseInt(priceTotal) + parseInt(deliveryCost.innerText);
+		console.log("nozone11")
+	}else{
+		if (priceTotal >= 2000) {
+			deliveryCost.classList.add('free');
+			deliveryCost.innerText = 'бесплатно';
+			txtquery.innerHTML  = '<div class="onzone">Условия бесплатной доставки выполнены</div>'
+			console.log("dear zone")
+		} else {
+			deliveryCost.classList.remove('free');
+			
+			deliveryCost.innerText = '150';
+			txtquery.innerHTML = '<div class="nozone"> Условия бесплатной доставки не выполнены </div>';
+			totalPriceEl.innerText = parseInt(priceTotal) + parseInt(deliveryCost.innerText);
+			console.log("low zone")
+		}
 	}
 }
