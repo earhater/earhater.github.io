@@ -97,7 +97,7 @@ btn6.addEventListener("click", function()
 	e.preventDefault();
 	let formData = new FormData(formElement); // создаём объект FormData, передаём в него элемент формы
 	// теперь можно извлечь данные
-	let delquery = getElementById(".delivery-cost");
+	let delquery = document.querySelector(".delivery-cost");
 	const name = formData.get('name'); // 'John'
 	let number = formData.get('number'); // 'Smith'
 	let comment = formData.get("comment");
