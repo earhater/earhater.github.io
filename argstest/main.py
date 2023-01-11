@@ -1,7 +1,7 @@
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import WebAppInfo
 
-
+import requests
 
 import config as cfg
 import markups
@@ -15,14 +15,15 @@ db = Database("database")
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    if not db.user_exists(message.from_user.id):
+    print(db.user_exists(message.from_user.id))
+    if db.user_exists(message.from_user.id) == True:
         start_command = message.text
         rfid = str(start_command[7:])
-        print("rfid" + rfid)
+
         if str(rfid) != '':
-            print("if")
+
             if str(rfid) != str(message.from_user.id):
-                print("checked for rfid")
+
                 db.add_user(message.from_user.id, rfid)
                 try:
                     await bot.send_message(rfid, "новый реферал")
