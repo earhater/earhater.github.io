@@ -100,7 +100,7 @@ function init() {
                
                 //adrquery.innerText = address
                 txtquery.innerHTML = '<div class="nozone"> Доставка За зону доставки. Ориентировачная цена  - 500р, но она уточняется у оператора </div>';
-                adrquery.innerText = adress;
+               
                 console.log("nozone")
                 deliveryPoint.options.set('iconColor', 'black');
                 calcCartPriceAndDelivery()

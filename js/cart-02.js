@@ -86,8 +86,8 @@ let btn6 = document.getElementById("subbutt");
 console.log(123)
 btn6.addEventListener("click", function()
 {
-	let adrquery = document.querySelector('#adr');
-	if (adrquery.innerText == '')
+	let txtquery = document.querySelector('#txt');
+	if (txtquery.innerHTML == '<div class="nozone"> Доставка За зону доставки. Ориентировачная цена  - 500р, но она уточняется у оператора </div>' || txtquery.innerHTML == '<div class="onzone">Условия бесплатной доставки выполнены</div>' )
 	{
 		alert("Вы не ввели адрес");
 	}else{
